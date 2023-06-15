@@ -1,0 +1,450 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Fira+Mono&family=Foldit&family=Great+Vibes&family=Indie+Flower&family=Noto+Sans+TC&family=Noto+Serif+TC&family=Pacifico&family=Unna:ital@1&display=swap');
+/* ---------------------共用--------------------- */
+*{
+    font-family: 'Fira Mono', monospace;
+}
+
+
+body {
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    /* background-color: #fff; */
+
+}
+
+#topbar img {
+    width: 40px;
+    height: 40px;
+}
+
+.sub_title{
+    font-size: 24px;
+}
+
+/* 後續處理 */
+/*.all_section{
+    /* width: 1400px; */
+/* display: flex; */
+/* justify-content: space-between; */
+/* align-content: center; */
+/* border: solid 5px red; 
+} */
+
+/* 1.topbar */
+/* logo區 */
+nav {
+    display: flex;
+}
+
+nav>.line {
+    /* border: solid 1px #000; */
+    margin-left: 10px;
+    margin-right: 10px;
+    /*左邊格子*/
+    flex: none;
+    width: 150px;
+    /*沒有彈性 固定尺寸*/
+}
+
+nav>.logo {
+    flex: auto;
+    /*盡量把容器的空間漲滿*/
+    /* border: solid 1px #000; */
+    margin-left: 10px;
+    margin-right: 10px;
+    /*logo*/
+    text-align: center;
+    /*logo 文字置中*/
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* icon區 */
+nav>.search {
+    /* border: solid 1px #000; */
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+/* icon的橫排 */
+.btn_icon {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/* 2.btn */
+/*  按鈕區 */
+.btn {
+    border: solid 3px #000;
+    padding: 5px;
+    margin: 5px;
+    float: right;
+    text-align: center;
+    border-radius: 20px;
+    /* 較大按鈕樣式 */
+    /* width: 130px;
+    height: 60px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn a {
+    color: #000;
+}
+
+.btn :hover {
+    background-color: #000;
+    color: #FFF;
+}
+
+.btn_menu {
+    display: flex;
+    justify-content: end;
+    /* border: 5px solid #d20e0e */
+}
+
+/* .line{
+    border: 5px solid #5e72c2
+} */
+
+/* .logo{
+    border: 5px solid #94e6e2
+} */
+
+/* .search{
+    border: 5px solid #c9d263
+} */
+
+/*3.news的版面設定 */
+/* border: 1px solid #888888 ; 一開始用完可以刪除 */
+table {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    /*欄位置中*/
+}
+
+.subtitle {
+    color: #FFF;
+    background-color: #000;
+    /* border: solid 5px red; */
+}
+
+/* border-bottom 可設定底下的線 其他都不要 */
+td {
+    border-bottom: 1px solid #000;
+    padding: 10px;
+}
+
+/* news的色塊設定 */
+/* 表格中第一列 */
+tr:nth-child(1) {
+    background-color: #999;
+    color: #FFF;
+    font-weight: bold;
+}
+
+tr:nth-child(2) {
+    color: #000;
+    font-weight: bold;
+}
+
+tr:nth-child(3) {
+    /* background-color:#999; */
+    /* color: #FFF; */
+    /* font-weight: bold; */
+}
+
+tr:nth-child(4) {
+    color: #000;
+    font-weight: bold;
+}
+
+tr:nth-child(5) {
+    background-color: #000;
+    color: #FFF;
+    font-weight: bold;
+}
+
+tr:nth-child(6) {
+    color: #000;
+    font-weight: bold;
+}
+
+/*4. 關於  */
+.box_about {
+    border: solid 1px #000;
+    padding:5px 20px;
+    margin: 5px 50px;
+    text-align: center;
+    /* test */
+    display: flex;
+    justify-content: center;
+    font-family: 'Fira Mono', monospace;
+}
+
+
+/* 5.產品 */
+.box {
+    clear: both;
+}
+
+.col {
+    border: solid 1px #000;
+    text-align: center;
+    width: 300px;
+    float: left;
+    margin: 0px;
+    border: 0px;
+    padding: 5px;
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    /*並排 切欄*/
+    justify-content: center;
+    /*水平對齊 欄位置中center  flex-start靠左  flex-end靠右 */
+    align-items: center;
+    /* border: solid 5px rgb(0, 55, 255); */
+}
+
+
+.box_products_name {
+    display: flex;
+    justify-content: space-around;
+    /* border: solid 1px #000; */
+    /* border: solid 5px red; */
+}
+
+/* x */
+/*產品名*/
+/* .box_products_main {
+    display: flex;
+    justify-content: space-around;
+    border: solid 1px #000;
+    text-align: center;
+    align-items: center;
+} */
+
+.block_products {
+    /* border: solid 5px red; */
+}
+
+.price {
+    font-weight: bold;
+    font-size: large;
+}
+
+.reg {
+    background-color: #000;
+    color: #FFF;
+    /* border: solid 5px red; */
+}
+
+/*6. article的版面設定 */
+/* border: 1px solid #888888 ; 一開始用完可以刪除 */
+table {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    /*欄位置中*/
+}
+
+/* border-bottom 可設定底下的線 其他都不要 */
+td {
+    border-bottom: 1px solid #000;
+    padding: 10px;
+}
+
+/* news的色塊設定 */
+/* 表格中第一列 */
+tr:nth-child(1) {
+    background-color: #000;
+    color: #FFF;
+    font-weight: bold;
+}
+
+tr:nth-child(2) {
+    color: #000;
+    font-weight: bold;
+}
+
+tr:nth-child(3) {
+    background-color: #000;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.title_article {
+    color: #FFF;
+}
+
+/* 7. map */
+.col_article {
+    border: solid 1px #000;
+    width: 500px;
+    float: left;
+    padding: 5px;
+    margin: 5px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    display: flex;
+    justify-content: center;
+    /* border: solid 5px rgb(0, 94, 255); */
+
+}
+
+.main_map {
+    display: flex;
+    justify-content: center;
+    /* border: solid 5px red; */
+}
+
+
+
+
+/* 8. go to top */
+.box_top {
+    text-align: right;
+    margin: 10px;
+}
+
+/* 9.. address */
+nav>.address {
+    /* flex: auto; */
+    /*盡量把容器的空間漲滿*/
+    border: solid 1px #000;
+    margin-left: 10px;
+    margin-right: 10px;
+    /*中間格子*/
+    text-align: center;
+    /*logo slogan文字置中*/
+
+}
+
+.main_address {
+    display: flex;
+    justify-content: space-around;
+    /* border: solid 5px rgb(255, 128, 0); */
+}
+
+/* address內容文字 */
+.address_text {
+    font-weight: bold;
+    padding: 0 20px;
+    margin: 0 50px;
+    align-items: end;
+    justify-content: center;
+    border: solid 1px block;
+    /* border: solid 5px red; */
+
+}
+
+.subtitle_address {
+    display: flex;
+    justify-content: center;
+    /* border: solid 5px rgb(0, 238, 255); */
+}
+
+.icon_address {
+    padding: 20px;
+    margin: 0 100px;
+    border: solid 1px block;
+    /* border: solid 5px rgb(0, 255, 0); */
+}
+
+.search_address {
+    padding: 20px;
+    margin: 0 100px;
+    border: solid 1px block;
+    /* border: solid 5px rgb(216, 141, 120); */
+}
+
+.title_address {
+    font-weight: bold;
+    /* font-size: 36px; */
+    /* border: solid 5px rgb(192, 120, 216); */
+}
+
+/* address整個區域 */
+.nav_address {
+    background-color: #f5f5f5;
+    width: 1500px;
+    display: flex;
+    justify-content: space-around;
+    /* border: solid 5px rgb(79, 128, 78); */
+}
+
+.box_address{
+    /* background-color: #f5f5f5; */
+}
+
+
+/* footer */
+.word_address {
+    display: flex;
+    align-items: end;
+    width: 200px;
+    height: 30px;
+    margin: 0 150px;
+
+    /* border: solid 5px rgb(192, 120, 216); */
+}
+
+/* x */
+/* .address {
+    font-weight: bold;
+} */
+
+/* -----------------------------------------分頁 -----------------------------------------*/
+
+/* about分頁 */
+.box_title {
+    background-color: #000;
+    color: #FFF;
+    clear: both;
+    text-align: center;
+
+}
+
+/* 滑鼠移到map字上 會放大 */
+/* .box_title:hover{
+    transform:scale(1.1);
+} */
+.box_news_cake {
+    border: solid 1px #000;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.news_cake {
+    border: solid 1px #000;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.box_photo {
+    border: solid 1px #000;
+    text-align: center;
+}
+
+/* line QRcode */
+.box_line {
+    margin-left: auto;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+
+}
+
+/* border: solid 5px red; */
